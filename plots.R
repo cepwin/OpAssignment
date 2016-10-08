@@ -36,7 +36,7 @@ theme1<-theme(plot.title=element_text(size=5),legend.title=element_text(size=8),
  plot6<-ggplot(dlist[[6]],aes(x=Provider.State,y=Dollars,color=Type)) + geom_point() + xlab("State") + ggtitle(title1) + theme1
  
  ##print them out in one plot
- png(file="plot2-all.png")
+ pdf(file="plot2-all.pdf")
  grid.arrange(plot1,plot2,plot3,plot4,plot5,plot6,ncol=2,nrow=3)
  dev.off()
 }
